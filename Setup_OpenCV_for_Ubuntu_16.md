@@ -46,7 +46,7 @@
     cd opencv && mkdir build && cd build
     ```
     ```
-    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_C_EXAMPLES=NO -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules BUILD_EXAMPLES=ON PYTHON3_EXECUTABLE=~/miniconda3/envs/tf_13_p35_cv33/bin/python -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3.5/dist-packages/numpy/core/include/ ..
+    cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_C_EXAMPLES=NO -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules BUILD_EXAMPLES=ON PYTHON3_EXECUTABLE=$(which python3) -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3.5/dist-packages/numpy/core/include/ ..
     ```
     ```
     make -j $(($(nproc)))
@@ -71,7 +71,7 @@
     sudo mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
     ```
     ```
-    cd ~/miniconda3/envs/tf_13_p35_cv33/lib/python3.5/site-packages
+    cd ~/miniconda3/envs/<env_name>/lib/python3.5/site-packages
     ```
     ```
     ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
