@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.3.0-py3
+FROM tensorflow/tensorflow:1.4.0-py3
 
 RUN apt-get update -y && apt-get upgrade -y && apt-get autoremove &&\
     apt-get install -y curl wget nano python3-tk
@@ -6,7 +6,7 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get autoremove &&\
 RUN apt-get install -y build-essential cmake git pkg-config\ 
     libjpeg-dev libtiff-dev libjasper-dev libpng-dev\
     libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libgtk2.0-dev\
-    libatlas-base-dev gfortran python-dev python-numpy libtbb2 libtbb-dev\
+    libatlas-base-dev gfortran libtbb2 libtbb-dev\
     libdc1394-22-dev libxvidcore-dev libx264-dev libgtk-3-dev python3-dev python3-numpy
 
 RUN pip --no-cache-dir install scipy numpy matplotlib scikit-learn scikit-image\
@@ -15,8 +15,8 @@ RUN pip --no-cache-dir install scipy numpy matplotlib scikit-learn scikit-image\
 RUN mkdir cv && cd cv && git clone https://github.com/Itseez/opencv_contrib.git &&\
     git clone https://github.com/Itseez/opencv.git
 
-RUN cd cv/opencv_contrib && git checkout 3.3.0 && cd .. && cd opencv &&\
-    git checkout 3.3.0 && mkdir build
+RUN cd cv/opencv_contrib && git checkout 3.3.1 && cd .. && cd opencv &&\
+    git checkout 3.3.1 && mkdir build
 
 RUN cd cv/opencv/build && cmake\
     -D CMAKE_BUILD_TYPE=RELEASE\

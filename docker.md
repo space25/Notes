@@ -52,9 +52,9 @@ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
 ```
 docker rmi $(docker images)
 ```
-'-d'  запустить в фоне
+'-d' run in the background
 
-'-it' запустить интерактивную консоль
+'-it' launch interactive mode
 
 Path to docker containers `/var/lib/docker/aufs/diff/`. Docker files
 ```
