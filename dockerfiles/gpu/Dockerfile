@@ -32,7 +32,9 @@ RUN cd cv/opencv/build && cmake\
     -D BUILD_EXAMPLES=OFF\
     -D PYTHON3_EXECUTABLE=$(which python3)\
     -D PYTHON_DEFAULT_EXECUTABLE=$(which python3)\
+    -DWITH_CUDA=OFF \
     -DENABLE_AVX=ON \
+    -DWITH_OPENGL=ON \
     -DWITH_IPP=ON \
     -DWITH_TBB=ON \
     -DWITH_EIGEN=ON \
