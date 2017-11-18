@@ -8,10 +8,10 @@ RUN apt-get install -y build-essential cmake git pkg-config\
     libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libgtk2.0-dev\
     libatlas-base-dev gfortran libtbb2 libtbb-dev\
     libdc1394-22-dev libxvidcore-dev libx264-dev libgtk-3-dev python3-dev python3-numpy\
-    python-dev python-numpy protobuf-compiler
+    python-dev python-numpy protobuf-compiler python-pil python-lxml
 
 RUN pip --no-cache-dir install scipy numpy matplotlib scikit-learn scikit-image\
-    csvkit jupyter numexpr cloudpickle pickleshare h5py hdf5storage CFFI Pillow
+    csvkit jupyter numexpr cloudpickle pickleshare h5py hdf5storage CFFI Pillow tqdm
 
 RUN mkdir cv && cd cv && git clone https://github.com/Itseez/opencv_contrib.git &&\
     git clone https://github.com/Itseez/opencv.git
