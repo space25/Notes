@@ -47,9 +47,7 @@ RUN cd cv/opencv/build make -j 4 && make install && ldconfig && rm -rf cv
 
 RUN cd /usr/local/lib/python3.5/dist-packages &&\
     ln -s cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
-
-RUN mkdir tf && cd tf && git clone https://github.com/tensorflow/models.git
-
+    
 RUN apt-get clean 
 # RUN rm -rf /var/lib/apt/lists/*
 
