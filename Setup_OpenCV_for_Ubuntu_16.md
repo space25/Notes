@@ -43,6 +43,10 @@
     ```
     cd opencv && git checkout <version> && cd ..
     ```
+10. Activate working environment:
+    ```
+    source activate <env_name>
+    ```
 10. Build OpenCV:
     ```
     cd opencv && mkdir build && cd build
@@ -50,6 +54,7 @@
     ```
     cmake -D CMAKE_BUILD_TYPE=RELEASE\
           -D CMAKE_INSTALL_PREFIX=/usr/local\
+          -D BUILD_opencv_legacy=OFF\
           -D INSTALL_C_EXAMPLES=NO\
           -D INSTALL_PYTHON_EXAMPLES=ON\
           -D OPENCV_EXTRA_MODULES_PATH=.../opencv_contrib/modules\
@@ -73,12 +78,16 @@
     ```
     ls /usr/local/lib/python3.5/site-packages/
     ```
+    or
+    ```
+    ls /usr/local/lib/python3/site-packages/
+    ```
 14. Add links to python env
     ```
     cd /usr/local/lib/python3.5/site-packages/
     ``` 
     ```
-    sudo mv cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+    sudo ln -s cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
     ```
     ```
     cd ~/miniconda3/envs/<env_name>/lib/python3.5/site-packages
