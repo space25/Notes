@@ -1,7 +1,8 @@
 ## Setup Python 3.5 environment for Ubuntu 16.04:
 1. Download and install [Miniconda](https://conda.io/miniconda.html)
 ```
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh &&\
+bash Miniconda3-latest-Linux-x86_64.sh
 ```
 2. Create environment:
 ```
