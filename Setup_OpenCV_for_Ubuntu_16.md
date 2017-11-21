@@ -52,15 +52,18 @@
     cd opencv && mkdir build && cd build
     ```
     ```
-    cmake -D CMAKE_BUILD_TYPE=RELEASE\
-          -D CMAKE_INSTALL_PREFIX=/usr/local\
-          -D BUILD_opencv_legacy=OFF\
-          -D INSTALL_C_EXAMPLES=NO\
-          -D INSTALL_PYTHON_EXAMPLES=ON\
-          -D OPENCV_EXTRA_MODULES_PATH=.../opencv_contrib/modules\
-          -D BUILD_EXAMPLES=ON\
-          -D PYTHON3_EXECUTABLE=$(which python3)\
-          -D PYTHON_DEFAULT_EXECUTABLE=$(which python3)\
+    cmake -D CMAKE_BUILD_TYPE=RELEASE \
+          -D CMAKE_INSTALL_PREFIX=/usr/local \
+          -D BUILD_opencv_legacy=OFF \
+          -D WITH_CUDA=OFF \
+          -D ENABLE_AVX=ON \
+          -D WITH_OPENGL=ON \
+          -D INSTALL_C_EXAMPLES=NO \
+          -D INSTALL_PYTHON_EXAMPLES=ON \
+          -D OPENCV_EXTRA_MODULES_PATH=.../opencv_contrib/modules \
+          -D BUILD_EXAMPLES=ON \
+          -D PYTHON3_EXECUTABLE=$(which python3) \
+          -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
           -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3.5/dist-packages/numpy/core/include/ ..
     ```
     ```
@@ -85,6 +88,8 @@
 14. Add links to python env
     ```
     cd /usr/local/lib/python3.5/site-packages/
+    or
+    cd /usr/local/lib/python3/site-packages/
     ``` 
     ```
     sudo ln -s cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
