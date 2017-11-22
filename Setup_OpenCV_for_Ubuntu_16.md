@@ -60,7 +60,7 @@
           -D WITH_OPENGL=ON \
           -D INSTALL_C_EXAMPLES=NO \
           -D INSTALL_PYTHON_EXAMPLES=ON \
-          -D OPENCV_EXTRA_MODULES_PATH=.../opencv_contrib/modules \
+          -D OPENCV_EXTRA_MODULES_PATH=<..>/opencv_contrib/modules \
           -D BUILD_EXAMPLES=ON \
           -D PYTHON3_EXECUTABLE=$(which python3) \
           -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
