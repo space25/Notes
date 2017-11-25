@@ -60,11 +60,11 @@
           -D WITH_OPENGL=ON \
           -D INSTALL_C_EXAMPLES=NO \
           -D INSTALL_PYTHON_EXAMPLES=ON \
-          -D OPENCV_EXTRA_MODULES_PATH=<..>/opencv_contrib/modules \
+          -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
           -D BUILD_EXAMPLES=ON \
           -D PYTHON3_EXECUTABLE=$(which python3) \
           -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
-          -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3.5/dist-packages/numpy/core/include/ ..
+          -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include/ ..
     ```
     ```
     make -j $(($(nproc)))
@@ -88,7 +88,9 @@
 14. Add links to python env
     ```
     cd /usr/local/lib/python3.5/site-packages/
+    ```
     or
+    ```
     cd /usr/local/lib/python3/site-packages/
     ``` 
     ```
@@ -99,6 +101,10 @@
     ```
     ```
     ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
+    ```
+    or
+    ```
+    ln -s /usr/local/lib/python3/site-packages/cv2.so cv2.so
     ```
 
 
