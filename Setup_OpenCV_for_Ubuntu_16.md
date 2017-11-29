@@ -56,7 +56,6 @@
           -D CMAKE_INSTALL_PREFIX=/usr/local \
           -D BUILD_opencv_legacy=OFF \
           -D WITH_CUDA=OFF \
-          -D ENABLE_AVX=ON \
           -D WITH_OPENGL=ON \
           -D INSTALL_C_EXAMPLES=NO \
           -D INSTALL_PYTHON_EXAMPLES=ON \
@@ -97,7 +96,7 @@
     sudo ln -s cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
     ```
     ```
-    cd ~/miniconda3/envs/<env_name>/lib/python3.5/site-packages
+    cd ~/miniconda3/envs/<env_name>/lib/python3.5/site-packages/
     ```
     ```
     ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
