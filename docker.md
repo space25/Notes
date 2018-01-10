@@ -8,55 +8,61 @@
     ```
 
 ## Operation with docker
-See running container:
-```
-docker ps
-```
-See all container:
-```
-docker ps -a
-```
-See all images:
-```
-docker images
-```
-To see what prosses is running:
-```
-docker top <id>
-```
-To see info about container:
-```
-docker hub container phusion/baseimage
-```
-Execute comand in container:
-```
-docker exec -it <id> /bin/bash
-```
-Instruction for build images:
-```
-docker build -t '<name>':'<version>' .
-```
-Other:
-```
-docker run -d -p 5001:80
-```
-```
-docker run -it -p 8885:8888 tensorflow_cv2_lpm
-```
-```
-docker run -it -v ~/Downloads:/data tf:0.2 /bin/bash
-```
-```
-docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
-```
-```
-docker rmi $(docker images)
-```
-'-d' run in the background
+1. See running container:
+    ```
+    docker ps
+    ```
+1. See all container:
+    ```
+    docker ps -a
+    ```
+1. See all images:
+    ```
+    docker images
+    ```
+1. To see what prosses is running:
+    ```
+    docker top <id>
+    ```
+1. To see info about container:
+    ```
+    docker hub container phusion/baseimage
+    ```
+1. Execute comand in container:
+    ```
+    docker exec -it <id> /bin/bash
+    ```
+1. Instruction for build images:
+    ```
+    docker build -t '<name>':'<version>' .
+    ```
 
-'-it' launch interactive mode
+1. [Purging All Unused or Dangling Images, Containers, Volumes, and Networks](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
+    * Docker provides a single command that will clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container):
+        ```
+        docker system prune
+        ```
+    * To additionally remove any stopped containers and all unused images (not just dangling images), add the -a flag to the command:
+        ```
+        docker system prune -a
+        ```
 
-Path to docker containers `/var/lib/docker/aufs/diff/`. Docker files
-```
-sudo ls -l /var/lib/docker/aufs/diff/
-```
+
+1. Other:
+    ```
+    docker run -d -p 5001:80
+    ```
+    ```
+    docker run -it -p 8885:8888 tensorflow_cv2_lpm
+    ```
+    ```
+    docker run -it -v ~/Downloads:/data tf:0.2 /bin/bash
+    ```
+    '-d' run in the background
+
+    '-it' launch interactive mode
+
+    Path to docker containers `/var/lib/docker/aufs/diff/`. Docker files
+    ```
+    sudo ls -l /var/lib/docker/aufs/diff/
+    ```
