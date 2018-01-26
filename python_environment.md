@@ -14,9 +14,10 @@
     ```
 1. Install dependency:
     ```
-    conda install scipy numpy matplotlib scikit-learn scikit-image csvkit jupyter \
+    conda install -y scipy numpy matplotlib scikit-learn scikit-image csvkit jupyter \
     nomkl numexpr cloudpickle pickleshare h5py CFFI requests beautifulsoup4 line_profiler \
-    memory_profiler pillow tqdm lxml
+    memory_profiler pillow tqdm lxml && \
+    pip install xgboost
     ```
 1. [optional] Check env using jupyter:
     ```
