@@ -53,17 +53,17 @@
     ```
     ```
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
-          -D CMAKE_INSTALL_PREFIX=/usr/local \
-          -D BUILD_opencv_legacy=OFF \
-          -D WITH_CUDA=OFF \
-          -D WITH_OPENGL=ON \
-          -D INSTALL_C_EXAMPLES=NO \
-          -D INSTALL_PYTHON_EXAMPLES=ON \
-          -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
-          -D BUILD_EXAMPLES=ON \
-          -D PYTHON3_EXECUTABLE=$(which python3) \
-          -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
-          -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include/ ..
+        -D CMAKE_INSTALL_PREFIX=/usr/local \
+        -D INSTALL_C_EXAMPLES=OFF \
+        -D INSTALL_PYTHON_EXAMPLES=OFF \
+        -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
+        -D BUILD_opencv_legacy=OFF \
+        -D BUILD_EXAMPLES=OFF\
+        -D PYTHON3_EXECUTABLE=$(which python3) \
+        -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
+        -D WITH_CUDA=OFF \
+        -D WITH_OPENGL=ON \
+        -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include/ ..
     ```
     ```
     make -j $(($(nproc)))
