@@ -23,5 +23,6 @@
     ```
     jupyter notebook --notebook-dir=<project_dir>
     ```
-1. [optional] [Installing TensorFlow on Ubuntu](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
-1. [optional] [Install PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux)
+1. [Install TensorFlow on Ubuntu](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
+1. [Install OpenCV](Setup_OpenCV_for_Ubuntu_16.md)
+1. [Install PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux)
