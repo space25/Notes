@@ -6,7 +6,7 @@
     ```
 1. Create environment:
     ```
-     conda create -n <env_name> python=3.5
+     conda create -n <env_name> python=3.6
     ```
 1. Activate environment:
     ```
