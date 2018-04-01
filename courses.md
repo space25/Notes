@@ -14,7 +14,22 @@
 1. [CS 20: Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/)
 1. [Deep Learning (Ian Goodfellow and Yoshua Bengio and Aaron Courville)](http://www.deeplearningbook.org/)
 
----
+## Recurrent neural network
+1. [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+1. [Evolution: from vanilla RNN to GRU & LSTMs (How it works) [RU]](https://www.youtube.com/watch?v=5lUUrREboSk)
+1. [Danijar Hafner's blog](https://danijar.com/blog/)
+1. [R2RT](https://r2rt.com/)
+
+## Neural Network With Memory
+1. [Dynamic Neural Networks for Question Answering](https://www.youtube.com/watch?v=T3octNTE7Is)
+1. [Deep Learning and Reasoning, Memory-Augmented Networks](https://www.youtube.com/watch?v=v43HUFW2DjQ)
+
+## Differentiable Neural Computer
+1. [Hybrid computing using a neural network with dynamic external memory](https://www.nature.com/articles/nature20101)
+1. [RNN Symposium 2016: Alex Graves - Differentiable Neural Computer](https://www.youtube.com/watch?v=steioHoiEms&list=PLPwzH56Rdmq4hcuEMtvBGxUrcQ4cAkoSc&index=11)
+1. [Implementation and Optimization of Differentiable Neural Computers](https://web.stanford.edu/class/cs224n/reports/2753780.pdf)
+1. [Neural networks. from: LSTM, to: Neural Computer, Danil Polykovskiy](https://www.youtube.com/watch?v=otRoAQtc5Dk)
+1. [The Differentiable Neural Computer and more](https://www.youtube.com/watch?v=K14VNejrgmc)
 
 ## Bayesian Deep Learning
 1. [Bayesian Methods for Machine Learning](https://www.coursera.org/learn/bayesian-methods-in-machine-learning/home/welcome)
