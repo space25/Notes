@@ -36,8 +36,14 @@
 1. [[DeepBayes] Летняя школа по байесовским методам в глубинном обучении](https://www.youtube.com/playlist?list=PLEqoHzpnmTfBSyGmE4nBlhxxi28dCZwWN)
 
 ---
+## Reinforcement Learning
+1. [CS234: Reinforcement Learning](http://web.stanford.edu/class/cs234/index.html)
+1. [CS 294: Deep Reinforcement Learning, Fall 2017](http://rll.berkeley.edu/deeprlcourse/)
+
+---
 
 ## Youtube Channel
 1. [Two Minute Papers](https://www.youtube.com/user/keeroyz/videos)
 1. [Siraj Raval](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A)
 1. [ComputerVisionFoundation](https://www.youtube.com/channel/UC0n76gicaarsN_Y9YShWwhw)
+1. [TensorFlow](https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ)
