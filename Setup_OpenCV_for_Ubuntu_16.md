@@ -28,7 +28,8 @@
     ```
     sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev\
                          libdc1394-22-dev libxvidcore-dev libx264-dev\
-                         libgtk-3-dev python3-dev python3-numpy
+                         libgtk-3-dev python3-dev python3-numpy\
+                         libboost-all-dev
     ```
 9. Clone repositories:
     ```
