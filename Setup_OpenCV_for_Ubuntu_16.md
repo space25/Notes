@@ -1,5 +1,5 @@
-## Install OpenCV 3.3 on Ubuntu 16 for python 3.5
-1. [Install python 3.5 environment](https://github.com/SpaceV2/Notes/blob/master/python_environment.md)
+## Install OpenCV 3.4 on Ubuntu 16 for python 3.6
+1. [Install python 3.6 environment](https://github.com/SpaceV2/Notes/blob/master/python_environment.md)
 2. Update system:
     ```
     sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove
@@ -81,7 +81,7 @@
     ```
 13. Check install:
     ```
-    ls /usr/local/lib/python3.5/site-packages/
+    ls /usr/local/lib/python3.6/site-packages/
     ```
     or
     ```
@@ -89,20 +89,20 @@
     ```
 14. Add links to python env
     ```
-    cd /usr/local/lib/python3.5/site-packages/
+    cd /usr/local/lib/python3.6/site-packages/
     ```
     or
     ```
     cd /usr/local/lib/python3/site-packages/
     ``` 
     ```
-    sudo ln -s cv2.cpython-35m-x86_64-linux-gnu.so cv2.so
+    sudo ln -s cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
     ```
     ```
-    cd ~/miniconda3/envs/<env_name>/lib/python3.5/site-packages/
+    cd ~/miniconda3/envs/<env_name>/lib/python3.6/site-packages/
     ```
     ```
-    ln -s /usr/local/lib/python3.5/site-packages/cv2.so cv2.so
+    ln -s /usr/local/lib/python3.6/site-packages/cv2.so cv2.so
     ```
     or
     ```
