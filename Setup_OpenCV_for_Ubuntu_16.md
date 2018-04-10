@@ -63,6 +63,8 @@
         -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
         -D WITH_CUDA=OFF \
         -D WITH_OPENGL=ON \
+        -D WITH_TIFF=ON \
+        -D BUILD_TIFF=ON \
         -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include/ ..
     ```
     ```
