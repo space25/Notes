@@ -4,7 +4,7 @@
 3. [Post-installation steps for Linux](https://docs.docker.com/engine/installation/linux/linux-postinstall/)
 4. Verify that Docker CE is installed correctly by running the Ubuntu image:
     ```
-    docker run -it ubuntu /bin/bash
+    docker run -it ubuntu bash
     ```
 
 ## Operation with docker
@@ -35,6 +35,30 @@
 1. Instruction for build images:
     ```
     docker build -t '<name>':'<version>' .
+    ```
+1. Exit from a container without stopping it:
+    ```
+    CTRL +  P + Q
+    ```
+1. Stop a container from outside of the container:
+    ```
+    docker stop <container id or name>
+    ```
+    or
+    ```
+    docker kill <container id or name>
+    ```
+1. Restert a container:
+    ```
+    docker start <container id>
+    ```
+1. Attach to a container:
+    ```
+    docker attach <container id>
+    ```
+1. Create an image from a container:
+    ```
+    docker commit <container id> <image name>
     ```
 
 1. [Purging All Unused or Dangling Images, Containers, Volumes, and Networks](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
