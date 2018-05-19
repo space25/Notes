@@ -17,12 +17,13 @@
     conda install -y scipy numpy matplotlib scikit-learn scikit-image csvkit jupyter \
     nomkl numexpr cloudpickle pickleshare h5py CFFI requests beautifulsoup4 line_profiler \
     memory_profiler pillow tqdm lxml && \
-    pip install xgboost editdistance cairocffi
+    pip install xgboost editdistance cairocffi Augmentor
     ```
 1. [optional] Check env using jupyter:
     ```
     jupyter notebook --notebook-dir=<project_dir>
     ```
 1. [Install TensorFlow on Ubuntu](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
+1. [Install Tensor2Tensor](https://github.com/tensorflow/tensor2tensor)
 1. [Install OpenCV](Setup_OpenCV_for_Ubuntu_16.md)
 1. [Install PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux)

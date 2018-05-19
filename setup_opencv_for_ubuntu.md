@@ -1,37 +1,37 @@
-## Install OpenCV 3.4 on Ubuntu 16 for python 3.6
+## Install OpenCV 3.4 on Ubuntu 18.04 for python 3.6
 1. [Install python 3.6 environment](https://github.com/SpaceV2/Notes/blob/master/python_environment.md)
-2. Update system:
+1. Update system:
     ```
-    sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove
+    sudo apt update && sudo apt upgrade && sudo apt autoremove
     ```
-3. Install prerequisite libraries:
+1. Install prerequisite libraries:
     ```
-    sudo apt-get install build-essential cmake git pkg-config
+    sudo apt install build-essential cmake git pkg-config
     ```
-4. Install libraries for reading image formats:
+1. Install libraries for reading image formats:
     ```
-    sudo apt-get install libjpeg-dev libtiff-dev libjasper-dev libpng-dev
+    sudo apt install libjpeg-dev libtiff-dev  libpng-dev
     ```
-5. Install libraries for reading video formats:
+1. Install libraries for reading video formats:
     ```
-    sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+    sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
     ```
-6. Install libraries that allows OpenCV user interface features:
+1. Install libraries that allows OpenCV user interface features:
     ```
-    sudo apt-get install libgtk2.0-dev
+    sudo apt install libgtk2.0-dev
     ```
-7. Install libraries that allows us to optimise OpenCV commands:
+1. Install libraries that allows us to optimise OpenCV commands:
     ```
-    sudo apt-get install libatlas-base-dev gfortran
+    sudo apt install libatlas-base-dev gfortran
     ```
-8. Optional packages:
+1. Optional packages:
     ```
-    sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev\
+    sudo apt install python-dev python-numpy libtbb2 libtbb-dev\
                          libdc1394-22-dev libxvidcore-dev libx264-dev\
                          libgtk-3-dev python3-dev python3-numpy\
                          libboost-all-dev
     ```
-9. Clone repositories:
+1. Clone repositories:
     ```
     git clone https://github.com/Itseez/opencv_contrib.git
     ```
@@ -44,11 +44,11 @@
     ```
     cd opencv && git checkout <version> && cd ..
     ```
-10. Activate working environment:
+1. Activate working environment:
     ```
     source activate <env_name>
     ```
-10. Build OpenCV:
+1. Build OpenCV:
     ```
     cd opencv && mkdir build && cd build
     ```
@@ -71,30 +71,22 @@
     ```
     make -j $(($(nproc)))
     ```
-11. Install OpenCV
+1. Install OpenCV
     ```
     sudo make install
     ```
-12. Finish linking dependencies:
+1. Finish linking dependencies:
     ```
     sudo ldconfig
     ```
-13. Check install:
+1. Check install:
     ```
     ls /usr/local/lib/python3.6/site-packages/
     ```
-    or
-    ```
-    ls /usr/local/lib/python3/site-packages/
-    ```
-14. Add links to python env
+1. Add links to python env
     ```
     cd /usr/local/lib/python3.6/site-packages/
     ```
-    or
-    ```
-    cd /usr/local/lib/python3/site-packages/
-    ``` 
     ```
     sudo ln -s cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
     ```
@@ -103,10 +95,6 @@
     ```
     ```
     ln -s /usr/local/lib/python3.6/site-packages/cv2.so cv2.so
-    ```
-    or
-    ```
-    ln -s /usr/local/lib/python3/site-packages/cv2.so cv2.so
     ```
 
 
