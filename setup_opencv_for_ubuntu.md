@@ -29,7 +29,10 @@
     sudo apt install python-dev python-numpy libtbb2 libtbb-dev\
                          libdc1394-22-dev libxvidcore-dev libx264-dev\
                          libgtk-3-dev python3-dev python3-numpy\
-                         libboost-all-dev
+                         libboost-all-dev swig graphviz libgtest-dev\
+                         doxygen clang qtdeclarative5-dev g++-multilib\
+                         gcc-multilib texlive-latex-base exlive-latex-extra\ texlive-fonts-recommended libboost-all-dev netcdf-bin\
+                         libnetcdf-dev libtool-bin automake ccache
     ```
 1. Clone repositories:
     ```
