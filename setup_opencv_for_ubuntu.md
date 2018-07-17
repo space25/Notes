@@ -31,7 +31,8 @@
                          libgtk-3-dev python3-dev python3-numpy\
                          libboost-all-dev swig graphviz libgtest-dev\
                          doxygen clang qtdeclarative5-dev g++-multilib\
-                         gcc-multilib texlive-latex-base exlive-latex-extra\ texlive-fonts-recommended libboost-all-dev netcdf-bin\
+                         gcc-multilib texlive-latex-base exlive-latex-extra\
+                         texlive-fonts-recommended libboost-all-dev netcdf-bin\
                          libnetcdf-dev libtool-bin automake ccache
     ```
 1. Clone repositories:
