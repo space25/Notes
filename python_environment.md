@@ -28,7 +28,10 @@
     ```
     pip install tensor2tensor
     ```
-1. [Install OpenCV](setup_opencv_for_ubuntu.md)
+1. [Install OpenCV](setup_opencv_for_ubuntu.md) or:
+    ```
+    pip install opencv-python
+    ```
 1. [Install PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux)
     ```
     sudo snap install pycharm-community --classic
