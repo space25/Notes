@@ -21,7 +21,7 @@
     ```
 1. Clone repositories:
     ```
-    mkdir cv && cd cd &&\
+    mkdir cv && cd cv &&\
     git clone https://github.com/Itseez/opencv_contrib.git &&\
     git clone https://github.com/Itseez/opencv.git
     ```
@@ -36,9 +36,7 @@
     ```
 1. Build OpenCV:
     ```
-    cd opencv && mkdir build && cd build
-    ```
-    ```
+    cd opencv && mkdir build && cd build &&\
     cmake -D CMAKE_BUILD_TYPE=RELEASE \
         -D CMAKE_INSTALL_PREFIX=/usr/local \
         -D INSTALL_C_EXAMPLES=OFF \
@@ -55,14 +53,8 @@
         -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include/ ..
     ```
     ```
-    make -j $(($(nproc)))
-    ```
-1. Install OpenCV
-    ```
-    sudo make install
-    ```
-1. Finish linking dependencies:
-    ```
+    make -j $(($(nproc))) &&\
+    sudo make install &&\
     sudo ldconfig
     ```
 1. Check install:
