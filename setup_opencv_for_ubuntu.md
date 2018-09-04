@@ -2,50 +2,32 @@
 1. [Install python 3.6 environment](https://github.com/SpaceV2/Notes/blob/master/python_environment.md)
 1. Update system:
     ```
-    sudo apt update && sudo apt upgrade && sudo apt autoremove
-    ```
-1. Install prerequisite libraries:
-    ```
-    sudo apt install build-essential cmake git pkg-config
-    ```
-1. Install libraries for reading image formats:
-    ```
-    sudo apt install libjpeg-dev libtiff-dev  libpng-dev
-    ```
-1. Install libraries for reading video formats:
-    ```
-    sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
-    ```
-1. Install libraries that allows OpenCV user interface features:
-    ```
-    sudo apt install libgtk2.0-dev
-    ```
-1. Install libraries that allows us to optimise OpenCV commands:
-    ```
-    sudo apt install libatlas-base-dev gfortran
-    ```
-1. Optional packages:
-    ```
-    sudo apt install python-dev python-numpy libtbb2 libtbb-dev\
-                         libdc1394-22-dev libxvidcore-dev libx264-dev\
-                         libgtk-3-dev python3-dev python3-numpy\
-                         libboost-all-dev swig graphviz libgtest-dev\
-                         doxygen clang qtdeclarative5-dev g++-multilib\
-                         gcc-multilib texlive-latex-base exlive-latex-extra\
-                         texlive-fonts-recommended libboost-all-dev netcdf-bin\
-                         libnetcdf-dev libtool-bin automake ccache
+    sudo apt update -y &&\
+    sudo apt upgrade -y &&\
+    sudo apt autoremove -y &&\
+    sudo apt install -y build-essential cmake git pkg-config\
+        libjpeg-dev libtiff-dev  libpng-dev libavcodec-dev\
+        libavformat-dev libswscale-dev libv4l-dev\
+        libgtk2.0-dev libatlas-base-dev gfortran\
+        python-dev python-numpy libtbb2 libtbb-dev\
+        libdc1394-22-dev libxvidcore-dev libx264-dev\
+        libgtk-3-dev python3-dev python3-numpy\
+        libboost-all-dev swig graphviz libgtest-dev\
+        doxygen clang qtdeclarative5-dev g++-multilib\
+        gcc-multilib texlive-latex-base\
+        texlive-fonts-recommended libboost-all-dev netcdf-bin\
+        libnetcdf-dev libtool-bin automake ccache\
+        qtcreator clang-format
     ```
 1. Clone repositories:
     ```
-    git clone https://github.com/Itseez/opencv_contrib.git
-    ```
-    ```
-    cd opencv_contrib && git checkout <version> && cd ..
-    ```
-    ```
+    mkdir cv && cd cd &&\
+    git clone https://github.com/Itseez/opencv_contrib.git &&\
     git clone https://github.com/Itseez/opencv.git
     ```
+1. Use the latest stable OpenCV version:
     ```
+    cd opencv_contrib && git checkout <version> && cd .. &&\
     cd opencv && git checkout <version> && cd ..
     ```
 1. Activate working environment:
@@ -100,7 +82,7 @@
     ```
     ln -s /usr/local/lib/python3.6/site-packages/cv2.so cv2.so
     ```
-
+1. [Configuring Qt Creator](https://github.com/SpaceV2/Notes/blob/master/qtcreator.md)
 
 ## Links
 1. [Installation in Linux](https://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html)
