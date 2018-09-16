@@ -1,8 +1,11 @@
 ## Insrall Docker:
-1. [Docker Community Edition (CE)](https://www.docker.com/community-edition)
-2. [Get Docker CE for Ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
-3. [Post-installation steps for Linux](https://docs.docker.com/engine/installation/linux/linux-postinstall/)
-4. Verify that Docker CE is installed correctly by running the Ubuntu image:
+1. [Docker CE for Ubuntu](https://www.docker.com/community-edition)
+1. [Get Docker CE for Ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/) or
+    ```
+    sudo snap install docker
+    ```
+1. [Post-installation steps for Linux](https://docs.docker.com/engine/installation/linux/linux-postinstall/)
+1. Verify that Docker CE is installed correctly by running the Ubuntu image:
     ```
     docker run -it ubuntu bash
     ```
@@ -34,7 +37,7 @@
     ```
 1. Instruction for build images:
     ```
-    docker build -t '<name>':'<version>' .
+    docker build --network host -t '<name>':'<version>' .
     ```
 1. Exit from a container without stopping it:
     ```
@@ -77,10 +80,10 @@
     docker run -d -p 5001:80
     ```
     ```
-    docker run -it -p 8885:8888 tensorflow_cv2_lpm
+    docker run -it -p 8885:8888 <name>
     ```
     ```
-    docker run -it -v ~/Downloads:/data tf:0.2 /bin/bash
+    docker run -it -v ~/Downloads:/data <name> /bin/bash
     ```
     '-d' run in the background
 
