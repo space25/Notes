@@ -1,4 +1,4 @@
-## Install OpenCV 3.4 on Ubuntu 18.04 for python 3.6
+## Install OpenCV 4.0.0 on Ubuntu 18.04 for python 3.6
 1. [Install python 3.6 environment](https://github.com/SpaceV2/Notes/blob/master/python_environment.md)
 1. Update system:
     ```
@@ -17,7 +17,7 @@
         gcc-multilib texlive-latex-base\
         texlive-fonts-recommended libboost-all-dev netcdf-bin\
         libnetcdf-dev libtool-bin automake ccache\
-        qtcreator clang-format
+        qtcreator clang-format default-jdk
     ```
 1. Clone repositories:
     ```

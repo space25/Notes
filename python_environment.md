@@ -17,13 +17,18 @@
     conda install -y scipy numpy matplotlib scikit-learn scikit-image csvkit jupyter \
         nomkl numexpr cloudpickle pickleshare h5py CFFI requests beautifulsoup4 line_profiler \
         memory_profiler pillow tqdm lxml && \
-    pip install editdistance cairocffi Augmentor json5 dotmap PyQt5 qimage2ndarray
+    pip install editdistance cairocffi Augmentor json5 dotmap PyQt5 qimage2ndarray numba
     ```
 1. [optional] Check env using jupyter:
     ```
     jupyter notebook --notebook-dir=<project_dir>
     ```
 1. [Install TensorFlow on Ubuntu](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
+    ```
+    pip install tensorflow
+    or
+    pip install tensorflow-gpu
+    ```
 1. [Install Tensor2Tensor](https://github.com/tensorflow/tensor2tensor#installation)
     ```
     pip install tensor2tensor
