@@ -17,7 +17,7 @@
     conda install -y scipy numpy matplotlib scikit-learn scikit-image csvkit jupyter \
         nomkl numexpr cloudpickle pickleshare h5py CFFI requests beautifulsoup4 line_profiler \
         memory_profiler pillow tqdm lxml && \
-    pip install editdistance cairocffi Augmentor json5 dotmap PyQt5 qimage2ndarray numba
+    pip install editdistance cairocffi Augmentor json5 dotmap PyQt5 qimage2ndarray numba shapely albumentations pyclipper imagesize
     ```
 1. [optional] Check env using jupyter:
     ```
