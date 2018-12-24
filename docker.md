@@ -1,5 +1,5 @@
 ## Insrall Docker:
-1. [Docker CE for Ubuntu](https://www.docker.com/community-edition)
+1. [Docker CE for Ubuntu](https://docs.docker.com/install/#supported-platforms)
 1. [Get Docker CE for Ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/) or
     ```
     sudo snap install docker
