@@ -2,7 +2,7 @@
 
 1. Install Qt Creator:
     ```
-    sudo apt install -y build-essential qtcreator clang-format
+    sudo apt install -y build-essential qtcreator clang-format ninja-build
     ```
 1. Set code style options:
     - Select **Help > About Plugins > C++ > Beautifier** to enable the plugin.
@@ -17,6 +17,7 @@
         ```
         ![](http://doc.qt.io/qtcreator/images/beautifier_editor.png, "")
 1. Customize keyboard shortcut. Select **Tools > Options > Environment > Keyboard** and find where **ClangFormat > FormatFile** in the middle column, then click on it and press **Ctrl+Shift+L**.
+1. [Optional] Added multithread for build **Select Tools > Options > Build & Run > Kits > Desktop (default) > CMake geterator (cleack Change..) > Generator (select Ninija)**
 
 
 ## Links
