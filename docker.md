@@ -9,6 +9,7 @@
     ```
     docker run -it ubuntu bash
     ```
+1. [Get started with Docker](https://docs.docker.com/get-started/)
 
 ## Operation with docker
 1. See running container:
