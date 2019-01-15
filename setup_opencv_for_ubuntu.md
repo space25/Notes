@@ -25,7 +25,7 @@
     git clone https://github.com/Itseez/opencv_contrib.git &&\
     git clone https://github.com/Itseez/opencv.git
     ```
-1. Use the latest stable OpenCV version:
+1. Use the [latest stable OpenCV version](https://opencv.org/releases.html):
     ```
     cd opencv_contrib && git checkout <version> && cd .. &&\
     cd opencv && git checkout <version> && cd ..
