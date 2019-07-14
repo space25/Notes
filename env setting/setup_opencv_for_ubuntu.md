@@ -1,5 +1,5 @@
 ## Install OpenCV 4.0.0 on Ubuntu 18.04 for python 3.6
-1. [Install python 3.6 environment](https://github.com/SpaceV2/Notes/blob/master/python_environment.md)
+1. [Install python 3.6 environment](python_environment.md)
 1. Update system:
     ```
     sudo apt update -y &&\
