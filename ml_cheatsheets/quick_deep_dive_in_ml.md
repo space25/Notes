@@ -5,7 +5,7 @@
 ### Tools
 
 - Install Linux
-- [Install python environment](https://github.com/space25/Notes/blob/master/python_environment.md)
+- [Install python environment](https://github.com/space25/Notes/blob/master/env%20setting/python_environment.md)
 
 ### Deep Learning
 
@@ -25,11 +25,33 @@
 - [Classification](https://www.coursera.org/learn/ml-classification)
 - [Clustering & Retrieval](https://www.coursera.org/learn/ml-clustering-and-retrieval)
 
+## Level 2 (in_progress)
+
+### Tools
+
+- [Deep Learning with TensorFlow 2 and Keras](https://github.com/ageron/tf2_course)
+- [Machine Learning Notebooks](https://github.com/ageron/handson-ml2)
+
+### Courses
+
+- [Basics of Modern Image Analysis (2016)](https://www.youtube.com/watch?v=Vzz54s_jMRo&list=PLuRaSnb3n4kRVLplnBQYYN39S-fzOlM-e)
+
 ### Podcast & YouTube Channel
 
-- [Artificial Intelligence Podcast](https://www.youtube.com/watch?v=q0mokx-iiws&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
+- [Artificial Intelligence Podcast](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
 - [Two Minute Papers](https://www.youtube.com/user/keeroyz/videos)
 
-## Level 2
+### [OPTIONAL] Math:
 
-TODO
+- [Computational Linear Algebra](https://github.com/fastai/numerical-linear-algebra/blob/master/README.md)
+- [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+- [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+
+## Level 3 (in_progress)
+
+### Courses
+
+- [Probabilistic Programming & Bayesian Methods for Hackers](http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/)
+
+## Level 4 (in_progress)
+### TODO
