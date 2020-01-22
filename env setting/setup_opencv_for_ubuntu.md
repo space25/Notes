@@ -1,4 +1,4 @@
-## Install OpenCV 4.0.0 on Ubuntu 18.04 for python 3.6
+## Install OpenCV 4.x.x on Ubuntu 18.04 for python 3.7
 1. [Install python 3.6 environment](python_environment.md)
 1. Update system:
     ```
@@ -22,8 +22,8 @@
 1. Clone repositories:
     ```
     mkdir cv && cd cv &&\
-    git clone https://github.com/Itseez/opencv_contrib.git &&\
-    git clone https://github.com/Itseez/opencv.git
+    git clone https://github.com/opencv/opencv_contrib.git &&\
+    git clone https://github.com/opencv/opencv.git
     ```
 1. Use the [latest stable OpenCV version](https://opencv.org/releases.html):
     ```
@@ -37,20 +37,21 @@
 1. Build OpenCV:
     ```
     cd opencv && mkdir build && cd build &&\
-    cmake -D CMAKE_BUILD_TYPE=RELEASE \
-        -D CMAKE_INSTALL_PREFIX=/usr/local \
-        -D INSTALL_C_EXAMPLES=OFF \
-        -D INSTALL_PYTHON_EXAMPLES=OFF \
-        -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
-        -D BUILD_opencv_legacy=OFF \
-        -D BUILD_EXAMPLES=OFF\
-        -D PYTHON3_EXECUTABLE=$(which python3) \
-        -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
-        -D WITH_CUDA=OFF \
-        -D WITH_OPENGL=ON \
-        -D WITH_TIFF=ON \
-        -D BUILD_TIFF=ON \
-        -D PYTHON3_NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include/ ..
+    cmake -D CMAKE_INSTALL_PREFIX=/usr/local \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D BUILD_JPEG=ON \
+    -D BUILD_PNG=ON \
+    -D BUILD_TIFF=ON \
+    -D OPENCV_ENABLE_NONFREE=ON \
+    -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules/ \
+    -D OPENCV_GENERATE_PKGCONFIG=ON \
+    -D WITH_OPENGL=ON \
+    -D WITH_TIFF=ON \
+    -D BUILD_TIFF=ON \
+    -D WITH_OPENGL=ON \
+    -D BUILD_opencv_legacy=OFF \
+    -D PYTHON3_EXECUTABLE=$(which python3) \
+    -D PYTHON_DEFAULT_EXECUTABLE=$(which python3) ..
     ```
     ```
     make -j $(($(nproc))) &&\
@@ -59,20 +60,17 @@
     ```
 1. Check install:
     ```
-    ls /usr/local/lib/python3.6/site-packages/
+    ls /usr/local/lib/python3.7/site-packages/
     ```
 1. Add links to python env
     ```
-    cd /usr/local/lib/python3.6/site-packages/
+    cd /usr/local/lib/python3.7/site-packages/
     ```
     ```
-    sudo ln -s cv2.cpython-36m-x86_64-linux-gnu.so cv2.so
+    cd ~/miniconda3/envs/<env_name>/lib/python3.7/site-packages/
     ```
     ```
-    cd ~/miniconda3/envs/<env_name>/lib/python3.6/site-packages/
-    ```
-    ```
-    ln -s /usr/local/lib/python3.6/site-packages/cv2.so cv2.so
+    ln -s /usr/local/lib/python3.7/site-packages/cv2 cv2
     ```
 1. [Configuring Qt Creator](https://github.com/SpaceV2/Notes/blob/master/qtcreator.md)
 
@@ -81,3 +79,4 @@
 2. [OpenCV-C++ Tutorials](https://docs.opencv.org/2.4/doc/tutorials/tutorials.html)
 3. [OpenCV-Java Tutorials](http://opencv-java-tutorials.readthedocs.io/en/latest/)
 4. [OpenCV-Python Tutorials](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html)
+5. [Install OpenCV with OpenCV Contrib](https://github.com/roshanpoudyal/Linux/wiki/Install-OpenCV-with-OpenCV-Contrib-(OpenCV-extra-modules)-on-Linux)
