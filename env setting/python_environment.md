@@ -15,7 +15,7 @@
 1. Install dependency:
     ```
     conda install -y scipy numpy matplotlib scikit-learn scikit-image pillow tqdm lxml && \
-    pip install -y json5 dotmap numba shapely imagesize tensorflow-cpu opencv-python opencv-contrib-python && \
+    pip install json5 dotmap numba shapely imagesize tensorflow-cpu opencv-python opencv-contrib-python && \
     conda install -y pytorch torchvision cpuonly -c pytorch
     ```
 1. [Install PyCharm](https://www.jetbrains.com/pycharm/download/#section=linux)
