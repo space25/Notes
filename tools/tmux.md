@@ -1,10 +1,8 @@
-### Create a new session
-```
-tmux new-session -s <sesstion name>
-```
-
-
 ### Main commands of tmux
+1. Create a new session
+    ```
+    tmux new-session -s <sesstion name>
+    ```
 1. Create a new window:
     ```
     CTRL+b -> c (create)
