@@ -7,7 +7,7 @@ tmux new-session -s <sesstion name>
 ### Main commands of tmux
 1. Create a new window:
     ```
-    0(window id number) window ->  CTRL+b -> c (create)
+    CTRL+b -> c (create)
     ```
 1. Switch between windows:
     ```
