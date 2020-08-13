@@ -15,6 +15,11 @@
     ```
     CTRL+b -> %
     ```
+1. Scroll:
+    ```
+    Ctrl-b -> [ -> normal navigation keys to scroll around (eg. Up Arrow or PgDn)
+    ```
+    Press q to quit scroll mode.
 1. Split window on two horisontal windows:
     ```
     CTRL+b -> "
@@ -43,10 +48,7 @@
 ### Configure tmux
 1. Activate mouse:
     ```
-    nano ~/.tmux.conf
-    ```
-    ``` 
-    set -g mouse on
+    echo "set -g mouse on" >> ~/.tmux.conf
     ```
 
    
