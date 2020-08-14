@@ -10,7 +10,7 @@
     ```
 1. Activate environment:
     ```
-    source activate <env_name>
+    conda activate <env_name>
     ```
 1. Install dependency:
     ```
