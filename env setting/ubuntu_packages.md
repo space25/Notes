@@ -2,7 +2,7 @@
     ```
     sudo apt install ubuntu-restricted-extras git terminator vlc mc filezilla neovim meld gnome-tweaks \
     build-essential cmake default-jdk clang clang-format automake ninja-build g++ gcc gfortran protobuf-compiler libboost-all-dev \
-    kazam krita openssh-server
+    kazam krita openssh-server flameshot
     ```
 
 1. Install snap packages
