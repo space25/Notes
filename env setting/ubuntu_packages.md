@@ -11,6 +11,18 @@
     sudo apt install -y gnome-software
     sudo apt install -y ubuntu-restricted-extras
     ```
+1. [Optional] Install QEMU:
+    ```
+    sudo apt install -y qemu-kvm bridge-utils libvirt-daemon virt-manager \
+	libvirt-clients libvirt-daemon-system
+    ```
+    ```
+    sudo adduser $USER libvirt
+    ```
+    or
+    ```
+    sudo usermod -aG libvirt $USER
+    ```
 
 1. Install snap packages
     ```
