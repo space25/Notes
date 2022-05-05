@@ -32,3 +32,7 @@
     sudo snap install opera &&\
     sudo snap install blender --classic
     ```
+1. How To Fix System Program Problem Detected In Ubuntu
+    ```
+    sudo rm /var/crash/*
+    ```
