@@ -29,6 +29,7 @@
     sudo snap install docker &&\
     sudo snap install pycharm-community --classic &&\
     sudo snap install code --classic &&\
+    sudo snap install qtcreator-ros --classic &&\
     sudo snap install opera &&\
     sudo snap install blender --classic
     ```
