@@ -9,7 +9,7 @@
         libjpeg-dev libtiff-dev  libpng-dev libavcodec-dev\
         libavformat-dev libswscale-dev libv4l-dev\
         libgtk2.0-dev libatlas-base-dev gfortran\
-        python-dev python-numpy libtbb2 libtbb-dev\
+        libtbb2 libtbb-dev\
         libdc1394-22-dev libxvidcore-dev libx264-dev\
         libgtk-3-dev python3-dev python3-numpy\
         libboost-all-dev swig graphviz libgtest-dev\
