@@ -1,7 +1,7 @@
 1. Install apt packages:
     ```
     sudo apt install -y git terminator vlc mc filezilla neovim meld \
-    build-essential cmake default-jdk clang clang-format automake ninja-build g++ gcc gfortran protobuf-compiler libboost-all-dev \
+    build-essential cmake default-jdk clang clang-format automake ninja-build g++ gcc gfortran protobuf-compiler libboost-all-dev swig \
     libopencv-dev libpcl-dev \
     flameshot kazam krita openssh-server
     ```
