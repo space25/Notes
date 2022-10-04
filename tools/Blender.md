@@ -1,5 +1,7 @@
 1. Navigatoin:
     - "Orbit Around Selection"  Edit -> Preferences -> Navigation -> Orbit Arrond Selection
+    - Edit -> Preferences -> Interface -> Display -> Tooltips -> Python Tooltips
+    - Edit -> Preferences -> "serch  node: Node Wrangler"
     - centration of object: "del" on numpad
     - move an object: "g"
     - open right panel: "n"
