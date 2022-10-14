@@ -4,7 +4,7 @@
     ```
     ```
     sudo dnf install ufw keepassxc snapd filezilla blender snapd \
-    java-latest-openjdk-devel.x86_64 clang clang-format boost-devel swig flameshot krita openssh-server firefox
+    java-latest-openjdk-devel.x86_64 clang boost-devel swig flameshot krita openssh-server firefox
     ```
 2. [Optional] Install QEMU:
     ```
