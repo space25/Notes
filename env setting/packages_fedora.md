@@ -3,8 +3,8 @@
     sudo dnf group install "C Development Tools and Libraries" "Development Tools"
     ```
     ```
-    sudo dnf install ufw keepassxc snapd filezilla blender snapd cmake \
-    java-latest-openjdk-devel.x86_64 clang boost-devel swig flameshot krita openssh-server firefox
+    sudo dnf install ufw keepassxc snapd filezilla blender snapd cmake gnome-software \
+    java-latest-openjdk-devel.x86_64 clang boost-devel swig flameshot krita openssh-server firefox 
     ```
 2. [Optional] Install QEMU:
     ```
