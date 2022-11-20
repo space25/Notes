@@ -1,7 +1,11 @@
 wsl -l -v
+
 wsl --set-default-version <Version#>
+
 wsl --set-version <distro name> 2
+  
 wsl --unregister <distro name>
+  
 wsl --shutdown
 
 
