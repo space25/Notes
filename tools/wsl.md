@@ -1,3 +1,9 @@
+### [Install WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+(Open PowerShell or Windows Command Prompt in administrator mode):
+```
+  wsl --install
+```
+
 ### Main commands:
 ```
   wsl -l -v
@@ -43,8 +49,8 @@ sudo apt install brave-browser
 ```
 
 ## Links
+* https://learn.microsoft.com/en-us/windows/wsl/install
 * https://github.com/microsoft/wslg
-* https://learn.microsoft.com/ru-ru/windows/wsl/install
 * https://www.youtube.com/playlist?list=PLhfrWIlLOoKNMHhB39bh3XBpoLxV3f0V9
 * https://www.windowscentral.com/how-completely-remove-linux-distro-wsl
 * https://forum.snapcraft.io/t/running-snaps-on-wsl2-insiders-only-for-now/13033
