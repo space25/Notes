@@ -57,6 +57,7 @@ sudo apt install brave-browser
 ```
 
 ## Links
+* https://github.com/microsoft/WSL/releases
 * https://learn.microsoft.com/en-us/windows/wsl/install
 * https://github.com/microsoft/wslg
 * https://www.youtube.com/playlist?list=PLhfrWIlLOoKNMHhB39bh3XBpoLxV3f0V9
