@@ -12,6 +12,14 @@
   wsl --unregister <distro name>  
   wsl --shutdown
 ```
+
+### Install image:
+```
+wsl --list --online
+```
+```
+wsl --install -d <Distro>
+```
   
 ### Update system:
 ```
