@@ -56,6 +56,8 @@ sudo apt update &&\
 sudo apt install brave-browser
 ```
 
+### [optionally] Install [MobaXterm](https://mobaxterm.mobatek.net/)
+
 ## Links
 * https://github.com/microsoft/WSL/releases
 * https://learn.microsoft.com/en-us/windows/wsl/install
