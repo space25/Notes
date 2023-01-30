@@ -8,9 +8,15 @@
     ```
     [optional]
     ```
+    sudo apt install -y gnome-boxes
     sudo apt install -y gnome-tweaks
     sudo apt install -y gnome-software
     sudo apt install -y ubuntu-restricted-extras
+    ```
+    
+    [optional]
+    ```
+    sudo apt --only-upgrade install <Package>
     ```
 1. [Optional] Install QEMU:
     ```
