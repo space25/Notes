@@ -18,6 +18,14 @@
     ```
     sudo apt --only-upgrade install <Package>
     ```
+    [optional]
+    ```
+    snap refresh --list
+    ```
+    ```
+    snap refresh
+    ```
+    
 1. [Optional] Install QEMU:
     ```
     sudo apt install -y qemu-kvm bridge-utils libvirt-daemon virt-manager \
