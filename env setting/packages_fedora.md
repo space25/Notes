@@ -10,6 +10,10 @@
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     ```
     ```
+    sudo snap install blue-recorder
+    ```
+    or
+    ```
     flatpak install flathub com.github.vkohaupt.vokoscreenNG
     ```
 2. [Optional] Install QEMU:
