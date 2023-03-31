@@ -3,8 +3,9 @@
     sudo dnf group install "C Development Tools and Libraries" "Development Tools"
     ```
     ```
-    sudo dnf install ufw keepassxc snapd filezilla blender cmake gnome-software \
-    java-latest-openjdk-devel.x86_64 clang boost-devel swig flameshot krita openssh-server firefox 
+    sudo dnf install ufw keepassxc snapd filezilla blender cmake \
+    java-latest-openjdk-devel.x86_64 clang boost-devel \
+    swig gnome-software flameshot krita openssh-server firefox 
     ```
     ```
     sudo ln -s /var/lib/snapd/snap /snap
