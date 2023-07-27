@@ -20,6 +20,14 @@ wsl --list --online
 ```
 wsl --install -d <Distro>
 ```
+
+### Remove a Linux distro:
+```
+wsl --list
+```
+```
+wsl --unregister <DISTRO-NAME>
+```
   
 ### Update system:
 ```
