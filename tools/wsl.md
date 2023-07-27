@@ -81,6 +81,7 @@ sudo apt install brave-browser
 
 ## Links
 * [Systemd support is now available in WSL!](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/)
+* [How to completely remove a Linux distro from the Windows Subsystem for Linux (WSL)](https://www.windowscentral.com/how-completely-remove-linux-distro-wsl)
 * https://github.com/microsoft/WSL/releases
 * https://learn.microsoft.com/en-us/windows/wsl/install
 * https://github.com/microsoft/wslg
