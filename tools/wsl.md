@@ -25,7 +25,20 @@ wsl --install -d <Distro>
 ```
   sudo apt update && sudo apt upgrade
 ```
-  
+
+### Enable systemd:
+```
+wsl --update
+```
+Add these lines to the /etc/wsl.conf:
+```
+sudo nano /etc/wsl.conf
+```
+```
+[boot]
+systemd=true
+```
+
 ### Install basic libraries:
 ```
   sudo apt install -y gedit gimp nautilus vlc x11-apps curl wget 
@@ -59,6 +72,7 @@ sudo apt install brave-browser
 ### [optionally] Install [MobaXterm](https://mobaxterm.mobatek.net/) or [mRemoteNG](https://mremoteng.org/)
 
 ## Links
+* [Systemd support is now available in WSL!](https://devblogs.microsoft.com/commandline/systemd-support-is-now-available-in-wsl/)
 * https://github.com/microsoft/WSL/releases
 * https://learn.microsoft.com/en-us/windows/wsl/install
 * https://github.com/microsoft/wslg
