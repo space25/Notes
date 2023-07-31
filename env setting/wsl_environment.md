@@ -45,3 +45,8 @@ sudo snap install docker
 ```
 sudo docker run docker/whalesay cowsay "HI $(docker --version)"
 ```
+
+### [optional] Change the device name:
+```
+sudo hostname <new-hostname>
+```
