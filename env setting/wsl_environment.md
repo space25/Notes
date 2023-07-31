@@ -43,11 +43,5 @@ sudo snap install blender --classic
 sudo snap install docker
 ```
 ```
-sudo groupadd docker # Create the docker group.
-```
-```
-sudo usermod -aG docker $USER # Add your user to the docker group.
-```
-```
- docker run docker/whalesay cowsay "HI $(docker --version)"
+sudo docker run docker/whalesay cowsay "HI $(docker --version)"
 ```
