@@ -7,7 +7,7 @@ python3 python3-dev python3-pip python3-numpy \
 pkg-config libgtk2.0-dev libjpeg-dev libtiff-dev libpng-dev libavcodec-dev
 ```
 
-### Download and install (Miniconda)[https://docs.conda.io/en/latest/miniconda.html]
+### Download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 ```
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
 bash Miniconda3-latest-Linux-x86_64.sh
