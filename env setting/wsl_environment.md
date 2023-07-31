@@ -1,7 +1,7 @@
 ### Install packages:
 ```
 sudo apt update -y && sudo apt upgrade -y && \
-sudo apt install -y git vlc mc filezilla neovim meld firefox nautilus \
+sudo apt install -y git vlc mc filezilla neovim meld firefox nautilus gedit \
 build-essential cmake default-jdk clang clang-format automake ninja-build \
 g++ gcc gfortran protobuf-compiler libboost-all-dev swig libopencv-dev \
 python3 python3-dev python3-pip python3-numpy \
