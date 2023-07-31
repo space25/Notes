@@ -31,9 +31,23 @@ pip install json5 dotmap numba shapely imagesize opencv-python opencv-contrib-py
 conda install -y pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
-### Install snap packages
+### Install snap packages:
 ```
 sudo snap install pycharm-community --classic &&\
 sudo snap install clion --classic &&\
 sudo snap install blender --classic
+```
+
+### [optional] Install docker:
+```
+sudo snap install docker
+```
+```
+sudo groupadd docker # Create the docker group.
+```
+```
+sudo usermod -aG docker $USER # Add your user to the docker group.
+```
+```
+ docker run docker/whalesay cowsay "HI $(docker --version)"
 ```
