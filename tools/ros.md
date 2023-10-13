@@ -25,4 +25,20 @@
 1. Build appication:
    ```
    colcon build
+   or
+   colcon build --packges-select <pkg_name>
+   or
+   colcon build --symlink-install
+   ```
+1. Run:
+   ```
+   ros2 run <package_name> <executable>
+   ```
+1. Check list of running nodes:
+   ```
+   ros2 node list
+   ```
+1. Rename a node in runtime:
+   ```
+   ros2 run <package_name> <executable> --ros-args --remap __node:=<new_name>
    ```
