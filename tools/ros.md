@@ -23,7 +23,7 @@
    ```
 1. Install python dependencies:
    ```
-   pip --no-cache-dir install numpy empy lark
+   pip3 --no-cache-dir install numpy empy lark
    ```
 ### Development:
 1. Create packages:
