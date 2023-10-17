@@ -1,3 +1,4 @@
+### Installation:
 1. Install [ROS](https://ros.org/)
 1. Install build tools:
    ```
@@ -16,6 +17,11 @@
    ```
    source ~/ros_ws/install/setup.bash
    ```
+1. Install tutorial:
+   ```
+   sudo apt install ros-humble-urdf-tutorial
+   ```
+### Development:
 1. Create packages:
    ```
    ros2 pkg create <python_pkg_name> --build-type ament_python --dependencies rclpy
@@ -37,6 +43,19 @@
 1. Check list of running nodes:
    ```
    ros2 node list
+   ```
+1. Check topics information type:
+   ```
+   ros2 topic list
+   ```
+1. Print topic information:
+   ```
+   ros2 topic echo /<topic_name>
+   ros2 topic info /<topic_name>
+   ros2 node info /<node_name>
+   ros2 interface show example_interfaces/msg/String
+   ros2 topic hz /<topic_name> # publishing frequency
+   ros2 topic bw /<topic_name>
    ```
 1. Rename a node in runtime:
    ```
