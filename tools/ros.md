@@ -21,6 +21,10 @@
    ```
    sudo apt install ros-humble-urdf-tutorial
    ```
+1. Install python dependencies:
+   ```
+   pip --no-cache-dir install numpy empy lark
+   ```
 ### Development:
 1. Create packages:
    ```
@@ -48,6 +52,10 @@
    ```
    ros2 topic list
    ```
+1. Check service list:
+   ```
+   ros2 service list
+   ```
 1. Print topic information:
    ```
    ros2 topic echo /<topic_name>
@@ -56,6 +64,8 @@
    ros2 interface show example_interfaces/msg/String
    ros2 topic hz /<topic_name> # publishing frequency
    ros2 topic bw /<topic_name>
+
+   ros2 service type /<service_name>
    ```
 1. Rename a node in runtime:
    ```
