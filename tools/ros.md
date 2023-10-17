@@ -71,3 +71,15 @@
    ```
    ros2 run <package_name> <executable> --ros-args --remap __node:=<new_name>
    ```
+1. Show massages in packages:
+   ```
+   ros2 interface package sensor_msgs
+   ```
+1. Pipeline:
+   ```
+   ros2 node list
+   ros2 node info /<node_name>
+   ros2 topic list
+   ros2 topic info /<topic_name>
+   ros2 interface show <message_type>
+   ```
