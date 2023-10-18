@@ -66,6 +66,7 @@
    ros2 topic bw /<topic_name>
 
    ros2 service type /<service_name>
+   
    ```
 1. Rename a node in runtime:
    ```
@@ -74,6 +75,12 @@
 1. Show massages in packages:
    ```
    ros2 interface package sensor_msgs
+   ```
+1. Check number of parameres of a node:
+   ```
+   ros2 param list
+   or
+   ros2 param get /<node_name> <param_name>
    ```
 1. Pipeline:
    ```
