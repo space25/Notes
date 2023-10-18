@@ -90,3 +90,7 @@
    ros2 topic info /<topic_name>
    ros2 interface show <message_type>
    ```
+1. Run Launch file
+   ```
+   ros2 launch <package_name> <name_of_launch_file>
+   ```
