@@ -25,6 +25,12 @@
    ```
    pip3 --no-cache-dir install numpy empy lark
    ```
+1. Install Gazebo
+   ```
+   sudo apt install ros-humble-gazebo*
+   or
+   sudo apt install gazebo
+   ```
 ### Development:
 1. Create packages:
    ```
