@@ -25,6 +25,9 @@
    ```
    pip3 --no-cache-dir install numpy empy lark
    ```
+   ```
+   sudo apt-get install ros-humble-imu-tools
+   ```
 1. Install Gazebo
    ```
    sudo apt install ros-humble-gazebo*
