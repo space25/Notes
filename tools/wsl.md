@@ -47,6 +47,17 @@ sudo nano /etc/wsl.conf
 systemd=true
 ```
 
+### Multiple WSL distro instances:
+```
+wsl --help
+```
+```
+wsl --export <Distro> <FileName>
+```
+```
+wsl --import <Distro> <InstallLocation> <FileName>
+```
+
 ### Install basic libraries:
 ```
   sudo apt install -y gedit gimp nautilus vlc x11-apps curl wget 
