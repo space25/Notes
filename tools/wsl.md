@@ -52,7 +52,7 @@ systemd=true
 wsl --help
 ```
 ```
-wsl --export <Distro> <FileName>
+wsl --export <Distro> <FileName> # wsl --export Ubuntu D:\wsl\ubuntu.tar
 ```
 ```
 wsl --import <Distro> <InstallLocation> <FileName>
