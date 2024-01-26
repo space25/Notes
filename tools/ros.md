@@ -11,7 +11,7 @@
    ```
 1. Create warkspace:
    ```
-   mkdir ros_ws && cd ros_ws && mkdir src && colcon build
+   mkdir ros_workspace && cd ros_workspace && mkdir <ProjectName> && cd <ProjectName> && mkdir src && colcon build
    ```
 1. Add lockal setup to .bashrc:
    ```
