@@ -34,6 +34,17 @@
    or
    sudo apt install gazebo
    ```
+1. [Optional] Fix python build
+   ```
+   pip3 list | grep setuptools
+   ```
+   need version 58.2.0
+   ```
+   pip3 --no-cache-dir install setuptools==58.2.0
+   ```
+   ```
+   pip3 list | grep setuptools
+   ```
 ### Development:
 1. Create packages:
    ```
