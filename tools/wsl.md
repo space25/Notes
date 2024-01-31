@@ -47,7 +47,7 @@ sudo nano /etc/wsl.conf
 systemd=true
 
 [user]
-default = DemoUser
+default=DemoUser
 ```
 
 ### Multiple WSL distro instances:
