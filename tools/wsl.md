@@ -48,9 +48,6 @@ systemd=true
 
 [user]
 default=DemoUser
-
-[wsl2]
-gpuSupport=false
 ```
 
 ### Multiple WSL distro instances:
