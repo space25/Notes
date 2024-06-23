@@ -3,11 +3,16 @@
   ```
   apt install qemu-kvm qemu
   ```
-1. Create disk:
+2. [Optional] QEMU tools:
+  ```
+  sudo apt install libvirt-daemon-system libvirt-clients\
+  virt-manager
+  ```
+2. Create disk:
   ```
   qemu-img create -f qcow2 disk1.qcow2 50G
   ```
-1. Create a basic QEMU guest using KVM:
+3. Create a basic QEMU guest using KVM:
   ```
   qemu-system-x86_64 \
     -enable-kvm \
