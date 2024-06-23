@@ -24,6 +24,7 @@
     -usbdevice tablet \
     -drive file=disk1.qcow2,if=virtio \
     -cdrom ubuntu-22.04.4-desktop-amd64.iso \
+    -monitor stdio \
     -boot menu=on
   ```
 
