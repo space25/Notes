@@ -14,7 +14,7 @@
   ```
 3. Create a basic QEMU guest using KVM:
   ```
-  qemu-system-x86_64 \
+  sudo qemu-system-x86_64 \
     -enable-kvm \
     -cpu host \
     -smp 4 \
@@ -25,6 +25,8 @@
     -drive file=disk1.qcow2,if=virtio \
     -cdrom ubuntu-22.04.4-desktop-amd64.iso \
     -monitor stdio \
+    -device qemu-xhci,id=xhci \
+    -device usb-host,bus=xhci.0,vendorid=0x058f,productid=0x6387
     -boot menu=on \
     -nic user,hostfwd=::2222-:22,hostfwd=::8080-:80
   ```
