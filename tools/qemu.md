@@ -36,3 +36,4 @@
 * [Notes and Snippets for Virtualization with QEMU and KVM on LinkedIn Learning](https://github.com/LinkedInLearning/virtualization-with-kvm-and-qemu-2487226/blob/main/Notes.md)
 * [QEMU: A proper guide!](https://www.youtube.com/watch?v=AAfFewePE7c&t=488s)
 * [Clipboard copy and paste in QEMU](https://www.youtube.com/watch?v=DcgF7-OHRTo)
+* [How To Emulate Firmware With QEMU - Hardware Hacking Tutorial](https://www.youtube.com/watch?v=3yP3QOT-h98)
