@@ -3,10 +3,13 @@
   ```
   apt install qemu-kvm qemu
   ```
-2. [Optional] QEMU tools:
+2. QEMU tools:
   ```
-  sudo apt install libvirt-daemon-system libvirt-clients\
-  virt-manager
+  sudo apt install -y qemu-kvm bridge-utils libvirt-daemon virt-manager \
+  libvirt-clients libvirt-daemon-system
+  ```
+  ```
+  sudo adduser $USER libvirt
   ```
 2. Create disk:
   ```
