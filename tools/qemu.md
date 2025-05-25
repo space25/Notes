@@ -1,7 +1,7 @@
 ## Setup:
 1.  Install:
   ```
-  apt install qemu-kvm qemu
+  apt install qemu-kvm
   ```
 2.  QEMU tools:
   ```
