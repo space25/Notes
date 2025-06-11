@@ -45,6 +45,7 @@
     sudo snap install code --classic &&\
     sudo snap install qtcreator-ros --classic &&\
     sudo snap install opera &&\
+    sudo snap install brave &&\
     sudo snap install keepassxc &&\
     sudo snap install blender --classic
     ```
